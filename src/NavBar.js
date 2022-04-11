@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import './App.css';
 
 const linkStyles = {
-  display: "absolute",
+  display: "inline-block",
   float: "right",
   width: "50px",
   height: "20px",
@@ -41,7 +42,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(100, 43, 43)",
         }}
       >
         Booking
@@ -51,7 +52,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(100, 43, 43)",
         }}
       >
         Guests
@@ -61,7 +62,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(100, 43, 43)",
         }}
       >
         Ghosts
@@ -71,7 +72,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(100, 43, 43)",
         }}
       >
         Rooms
@@ -81,7 +82,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(100, 43, 43)",
         }}
       >
         Images
@@ -91,7 +92,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(100, 43, 43)",
         }}
       >
         Home
