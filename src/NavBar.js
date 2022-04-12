@@ -9,8 +9,9 @@ const linkStyles = {
   height: "20px",
   padding: "12px",
   margin: "0 6px 6px",
-  background: "blue",
+  background: "#1b4915",
   textDecoration: "none",
+  borderRadius: "25%",
   color: "white",
 };
 const titleStyle ={

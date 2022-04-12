@@ -1,3 +1,4 @@
+import React,{useEffect, useState} from "react";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
@@ -9,6 +10,13 @@ import Booking from "./Booking";
 import './App.css';
 
 function App() {
+  const [roomImage, setRoomImage] = useState([])
+
+  useEffect(()=> {
+    fetch("http://localhost:3000/rooms")
+    .then(resp => resp.json())
+    .then(item => setRoomImage(item))
+  },[])
   return (
     <div className="App">
       <NavBar />
@@ -17,7 +25,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/images">
-          <Images />
+          <Images room={roomImage}/>
         </Route>
         <Route path="/rooms">
           <Rooms />
