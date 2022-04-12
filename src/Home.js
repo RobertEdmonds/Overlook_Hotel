@@ -25,9 +25,14 @@ function Home(){
         width: "300px",
         float: "left",
     }
+    const divStyle ={
+        maxWidth: "100%",
+        height: "300px",
+        textAlign: "center"
+    }
     const listStyle ={
         width: "400px",
-        paddingLeft: "350px"
+        paddingLeft: "450px"
     }
     const navBarStyle = {
         height: "100px"
@@ -66,7 +71,7 @@ function Home(){
             <h1>Beautiful</h1>
             <h1>Overlook Hotel</h1>
         </div>
-        <div>
+        <div style={divStyle}>
             <img style={historyImageStyle} src="https://i.dailymail.co.uk/i/pix/2015/10/31/23/2DFD13E100000578-3298376-_Everyday_felt_like_we_d_been_invited_to_a_very_exclusive_party_-a-1_1446335780138.jpg" alt="Family Fun"/>
             <h3 style={titleStyle}>History of the Overlook</h3>
             <ul style={listStyle}>
@@ -77,10 +82,10 @@ function Home(){
                 <li>1970 - Hotel was sold to its current owner.</li>
             </ul>
         </div>
-        <div>
+        <div style={divStyle}>
             <img style={expectationImageStyle} src="https://topiaryart.co.uk/wp-content/uploads/photo-gallery/CBWYH1sWgAERT8z.jpg" alt="What to expect"/>
             <h3 style={titleStyle}>What To Expect For Your Stay</h3>
-            <ol>
+            <ol style={{width: "400px", paddingLeft: "175px"}}>
                 <li>World class staff waiting on you hand and foot.</li>
                 <li>Coplimentary turn down service.</li>
                 <li>Room service 24/7</li>

@@ -19,9 +19,9 @@ function Images({room}){
         background: "#424c50",
         float: "left"
     }
-    const leftImageStyle = {
-        width: "200px",
-        height: "150px",
+    const imageStyle = {
+        width: "300px",
+        height: "200px",
     }
     const rightDivStyle = {
         maxWidth: "100%",
@@ -30,10 +30,7 @@ function Images({room}){
         background: "#424c50",
         float: "right"
     }
-    const rightImageStyle = {
-        width: "200px",
-        height: "150px",
-    }
+    
     const tableStyle = {
         background: "black",
         width: "100%"
@@ -54,13 +51,13 @@ function Images({room}){
         if(item.id % 2 === 0){
             return(
                 <div style={leftDivStyle}>
-                    <img style={leftImageStyle} key={item.id} src={item.image} alt={item.id}/>
+                    <img style={imageStyle} key={item.id} src={item.image} alt={item.id}/>
                 </div>
             )
         }else{
             return(
                 <div style={rightDivStyle}>
-                    <img style={rightImageStyle} key={item.id} src={item.image} alt={item.id}/>
+                    <img style={imageStyle} key={item.id} src={item.image} alt={item.id}/>
                 </div>
             )
         }
@@ -68,14 +65,14 @@ function Images({room}){
     const displayRoomImage = room.map(item => {
         if(item.id % 2 === 0){
             return(
-                <div style={leftDivStyle}>
-                    <img style={leftImageStyle} key={item.id} src={item.image} alt={item.id}/>
+                <div style={rightDivStyle}>
+                    <img style={imageStyle} key={item.id} src={item.image} alt={item.id}/>
                 </div>
             )
         }else{
             return(
-                <div style={rightDivStyle}>
-                    <img style={rightImageStyle} key={item.id} src={item.image} alt={item.id}/>
+                <div style={leftDivStyle}>
+                    <img style={imageStyle} key={item.id} src={item.image} alt={item.id}/>
                 </div>
             )
         }
