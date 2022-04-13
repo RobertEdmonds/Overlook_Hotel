@@ -7,6 +7,7 @@ import Rooms from "./Rooms";
 import Ghosts from "./Ghosts";
 import Guests from "./Guests";
 import Booking from "./Booking";
+import Footer from "./Footer.js"
 import './App.css';
 
 function App() {
@@ -18,22 +19,6 @@ function App() {
     .then(item => setRoomImage(item))
   },[])
 
-  const tableStyle = {
-    background: "black",
-    width: "100%"
-}
-const tableManagementStyle = {
-    color: "white",
-    float: "right"
-}
-const tableContactStyle = {
-    color: "white",
-    float: "center"
-}
-const tableLocationStyle = {
-    color: "white",
-    float: "left"
-}
   return (
     <div className="App">
       <NavBar />
@@ -57,23 +42,7 @@ const tableLocationStyle = {
           <Booking />
         </Route>
       </Switch>
-      <table style={tableStyle}>
-            <tr>
-                <th style={tableLocationStyle}>Location:</th>
-                <th style={tableContactStyle}>Contact:</th>
-                <th style={tableManagementStyle}>Management:</th>
-            </tr>
-            <tr>
-                <td style={tableLocationStyle}>555 Overlook Pass</td>
-                <td style={tableContactStyle}>(303)466-4355</td>
-                <td style={tableManagementStyle}>Stuart Ullman</td>
-            </tr>
-            <tr>
-                <td style={tableLocationStyle}>Sidewinder, CO 80064</td>
-                <td style={tableContactStyle}>OUT OF SEASON: (303)545-5968</td>
-                <td style={tableManagementStyle}>Jack Torrance</td>
-            </tr>
-        </table>
+      <Footer />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
