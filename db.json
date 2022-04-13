@@ -174,5 +174,73 @@
       "end_date": "0521",
       "room": "King"
     }
+  ],
+  "history":[
+    {
+      "id": 1,
+      "fact": "1920 - Hotel was built for the rich and famous to get away from the hustle and bustle of the world."
+    },
+    {
+      "id": 2,
+      "fact": "1929 - 1939 - The great depression. The Hotel sat vacant."
+    },
+    {
+      "id": 3,
+      "fact": "1942 - A wealthy investor bought the Overlook. He invested over one million dollars to renovate the inside for a more family friendly atmosphere."
+    },
+    {
+      "id": 4,
+      "fact": "1950 - Mob violence reaches the Overlook, with 5 members of the mob getting brutally murdered in one of the presidential suites."
+    },
+    {
+      "id": 5,
+      "fact": "1970 - Hotel was sold to its current owner."
+    }
+  ],
+  "expectations":[
+    {
+      "id": 1,
+      "event": "World class staff waiting on you hand and foot."
+    },
+    {
+      "id": 2,
+      "event": "Complimentary turn down service."
+    },
+    {
+      "id": 3,
+      "event": "Room service 24/7"
+    },
+    {
+      "id": 4,
+      "event": "Free admission into our 3 square acre maze."
+    },
+    {
+      "id": 5,
+      "event": "Excitement around every corner."
+    },
+    {
+      "id": 6,
+      "event": "Tennis courts"
+    },
+    {
+      "id": 7,
+      "event": "Play ground for the little ones"
+    },
+    {
+      "id": 8,
+      "event": "Full kitchen staff. To make whatever your heart desires."
+    },
+    {
+      "id": 9,
+      "event": "Enjoy the fresh mountain air with scenic views."
+    },
+    {
+      "id": 10,
+      "event": "Nightly ballroom dancing."
+    },
+    {
+      "id": 11,
+      "event": "Nightly visits from beyond the grave and so much more fun."
+    }
   ]
 }
