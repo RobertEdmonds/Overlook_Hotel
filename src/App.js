@@ -19,9 +19,10 @@ function App() {
     .then(item => setRoomImage(item))
   },[])
 
+
   return (
     <div className="App">
-      <NavBar />
+      <NavBar/>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -30,7 +31,7 @@ function App() {
           <Images room={roomImage}/>
         </Route>
         <Route path="/rooms">
-          <Rooms />
+          <Rooms room={roomImage}/>
         </Route>
         <Route path="/ghosts">
           <Ghosts />

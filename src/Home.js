@@ -24,14 +24,9 @@ function Home(){
         fontFamily: "Apple Chancery",
     }
     
-    const navBarStyle = {
-        height: "100px"
-    }
-    
     
     return(
         <>
-        <div style={navBarStyle}></div>
         <div style={homeImageStyle}></div>
         <div style={homeImageText}>
             <h1>Welcome</h1>

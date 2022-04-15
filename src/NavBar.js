@@ -28,9 +28,13 @@ const titleStyle ={
   color: "rgb(100, 43, 43)",
 }
 
+const navBarStyle = {
+  height: "100px"
+}
+
 function NavBar() {
   return (
-    <div>
+    <div style={navBarStyle}>
     <NavLink
         to="/"
         exact

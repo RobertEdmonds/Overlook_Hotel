@@ -9,9 +9,6 @@ function Images({room}){
         .then(item => setHotelImage(item))
     },[])
 
-    const navBarStyle = {
-        height: "100px"
-    }
     const leftDivStyle = {
         maxWidth: "100%",
         maxHeight: "100%",
@@ -63,7 +60,6 @@ function Images({room}){
     })
     return(
         <>
-        <div style={navBarStyle}></div>
         <div style={{paddingLeft: "50px", paddingRight: "50px", background: "#424c50"}}>
         {displayHotelImage}
         {displayRoomImage}
