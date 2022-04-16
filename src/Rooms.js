@@ -1,13 +1,21 @@
 import React from "react";
 
-function Rooms({room}){
+function Rooms({room, handleClickFilter}){
+
     const divStyle ={
         border: "2px solid rgb(100, 43, 43)",
-        padding: "25px"
+        padding: "25px",
     }
     const imageStyle = {
         width: "450px",
         height: "350px"
+    }
+    const buttonDisplay = {
+        width: "50px",
+        height: "40px",
+        background: "#1b4915",
+        borderRadius: "25%",
+        margin: "5px"
     }
     const displayRooms = room.map(item => {
         return(
@@ -18,9 +26,15 @@ function Rooms({room}){
             </div>
         )
     })
+
     return(
         <>
-            <div style={{float: "left" , width: "50px"}}>hello</div>
+            <div style={{float: "left" , width: "50px", position: "fixed"}}>
+                <button style={buttonDisplay} onClick={handleClickFilter}>Two Queen</button>
+                <button style={buttonDisplay} onClick={handleClickFilter}>King</button>
+                <button style={buttonDisplay} onClick={handleClickFilter}>Suite</button>
+                <button style={buttonDisplay} onClick={handleClickFilter}>All</button>
+            </div>
             {displayRooms}
         </>
     )

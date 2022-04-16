@@ -12,6 +12,7 @@ import './App.css';
 
 function App() {
   const [roomImage, setRoomImage] = useState([])
+  const [chooseRoom, setChooseRoom] = useState("All")
 
   useEffect(()=> {
     fetch("http://localhost:3000/rooms")
@@ -19,6 +20,15 @@ function App() {
     .then(item => setRoomImage(item))
   },[])
 
+  function handleClickFilter(e){
+    setChooseRoom(e.target.outerText)
+}
+
+const filterRooms = roomImage.filter(item => {
+    if(chooseRoom === "All")return true;
+
+    return chooseRoom === item.size
+})
 
   return (
     <div className="App">
@@ -28,10 +38,10 @@ function App() {
           <Home />
         </Route>
         <Route path="/images">
-          <Images room={roomImage}/>
+          <Images room={roomImage} />
         </Route>
         <Route path="/rooms">
-          <Rooms room={roomImage}/>
+          <Rooms room={filterRooms} handleClickFilter={handleClickFilter}/>
         </Route>
         <Route path="/ghosts">
           <Ghosts />
