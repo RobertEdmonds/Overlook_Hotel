@@ -12,7 +12,7 @@ const linkStyles = {
   background: "#1b4915",
   textDecoration: "none",
   borderRadius: "25%",
-  color: "white",
+  color: "gold",
 };
 const titleStyle ={
     display: "absolute",

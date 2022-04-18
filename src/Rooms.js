@@ -15,6 +15,7 @@ function Rooms({room, handleClickFilter}){
         height: "40px",
         background: "#1b4915",
         borderRadius: "25%",
+        color: "gold",
         margin: "5px"
     }
     const displayRooms = room.map(item => {

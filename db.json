@@ -66,31 +66,31 @@
     },
     {
       "id": 2,
-      "size":"Two Queen",
+      "size": "Two Queen",
       "image": "https://compote.slate.com/images/3a80009e-24e2-4bf0-9cd0-99ef4d4a5255.jpg?height=346&width=568",
       "price": 175
     },
     {
       "id": 3,
-      "size":"King",
+      "size": "King",
       "image": "https://media.cntraveler.com/photos/5a29568bb70da5581cb857e4/16:9/w_1280,c_limit/hilton-memphis-cr-courtesy.jpg",
       "price": 250
     },
     {
       "id": 4,
-      "size":"King",
+      "size": "King",
       "image": "https://s31606.pcdn.co/wp-content/uploads/2016/08/hotel-rooms.jpg",
       "price": 275
     },
     {
       "id": 5,
-      "size":"Suite",
+      "size": "Suite",
       "image": "https://www.valleyviewcasino.com/wp-content/uploads/Hero-Deluxe-Room-final.jpg",
       "price": 350
     },
     {
       "id": 6,
-      "size":"Suite",
+      "size": "Suite",
       "image": "https://media.gq.com/photos/5cfabef527710c36fe4e5582/master/w_1944,h_1296,c_limit/GQ-High-End-Hotel-Rooms-2019-Heckfield-Place%E2%80%99s-Long-Room,-England.jpg",
       "price": 375
     }
@@ -100,49 +100,49 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
+      "likes": 20
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
+      "likes": 15
     },
     {
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": 5
     },
     {
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 4
+      "likes": 7
     },
     {
       "id": 5,
       "name": "Rex",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "likes": 1
+      "likes": 4
     },
     {
       "id": 6,
       "name": "Bo Peep",
       "image": "http://4.bp.blogspot.com/_OZHbJ8c71OM/Sog43CMFX2I/AAAAAAAADEs/0AKX0XslD4g/s400/bo.png",
-      "likes": 2
+      "likes": 4
     },
     {
       "id": 7,
       "name": "Hamm",
       "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
-      "likes": 0
+      "likes": 5
     },
     {
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
-      "likes": -2
+      "likes": 6
     }
   ],
   "guest": [
@@ -175,7 +175,7 @@
       "room": "King"
     }
   ],
-  "history":[
+  "history": [
     {
       "id": 1,
       "fact": "1920 - Hotel was built for the rich and famous to get away from the hustle and bustle of the world."
@@ -197,7 +197,7 @@
       "fact": "1970 - Hotel was sold to its current owner."
     }
   ],
-  "expectations":[
+  "expectations": [
     {
       "id": 1,
       "event": "World class staff waiting on you hand and foot."
