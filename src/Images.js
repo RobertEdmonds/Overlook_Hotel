@@ -17,8 +17,8 @@ function Images({room}){
         float: "left"
     }
     const imageStyle = {
-        width: "300px",
-        height: "200px",
+        width: "400px",
+        height: "300px",
     }
     const rightDivStyle = {
         maxWidth: "100%",

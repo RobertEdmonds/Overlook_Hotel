@@ -15,40 +15,40 @@ function App() {
   const [getGhost, setGetGhost] = useState([])
   const [chooseRoom, setChooseRoom] = useState("All")
   const [seconds, setSeconds] = useState(0)
-    const [minutes, setMinutes] = useState(0)
-    const [hours,  setHours] = useState(0)
-    const [days, setDays] = useState(0)
-    const [timeStopper, setTimeStopper] = useState(false)
+  const [minutes, setMinutes] = useState(0)
+  const [hours,  setHours] = useState(0)
+  const [days, setDays] = useState(0)
+  const [timeStopper, setTimeStopper] = useState(false)
 
 
-    useEffect(() => {
-        let myInterval = setInterval(() => {
-            if(timeStopper === true){
-                setDays(0)
-                setHours(0)
-                setMinutes(0)
-                setSeconds(0)
-                setTimeStopper(false)
-            }else if(seconds === 60 && minutes < 60){
-                setMinutes(minutes + 1)
-                setSeconds(0)
-            }else if(seconds === 60 && minutes === 60 && hours < 24){
-                setHours(hours + 1)
-                setMinutes(0)
-                setSeconds(0)
-            }else if(seconds === 60 && minutes === 60 && hours === 24){
-                setDays(days + 1)
-                setHours(0)
-                setMinutes(0)
-                setSeconds(0)
-            }else if(seconds < 60){
-                setSeconds(seconds + 1)
-            }
+  useEffect(() => {
+      let myInterval = setInterval(() => {
+          if(timeStopper === true){
+              setDays(0)
+              setHours(0)
+              setMinutes(0)
+              setSeconds(0)
+              setTimeStopper(false)
+          }else if(seconds === 59 && minutes < 59){
+              setMinutes(minutes + 1)
+              setSeconds(0)
+          }else if(seconds === 59 && minutes === 59 && hours < 23){
+              setHours(hours + 1)
+              setMinutes(0)
+              setSeconds(0)
+          }else if(seconds === 59 && minutes === 59 && hours === 23){
+              setDays(days + 1)
+              setHours(0)
+              setMinutes(0)
+              setSeconds(0)
+          }else if(seconds < 59){
+              setSeconds(seconds + 1)
+          }
         }, 1000)
         return ()=> {
             clearInterval(myInterval);
           };
-    });
+  });
 
   useEffect(()=> {
     fetch("http://localhost:3000/ghost")
