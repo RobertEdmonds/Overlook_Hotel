@@ -13,6 +13,7 @@ import './App.css';
 function App() {
   const [roomImage, setRoomImage] = useState([])
   const [getGhost, setGetGhost] = useState([])
+  const [getGuests, setGetGuests] = useState([])
   const [chooseRoom, setChooseRoom] = useState("All")
   const [seconds, setSeconds] = useState(0)
   const [minutes, setMinutes] = useState(0)
@@ -62,6 +63,12 @@ function App() {
     .then(item => setRoomImage(item))
   },[])
 
+  useEffect(() => {
+    fetch("http://localhost:3000/guest")
+    .then(resp => resp.json())
+    .then(people => setGetGuests(people))
+  }, [])
+
   function handleClickFilter(e){
     setChooseRoom(e.target.outerText)
   }
@@ -100,7 +107,7 @@ function App() {
           <Ghosts ghosts={getGhost} addToGhost={handleUpdatedGhosts} seconds={seconds} minutes={minutes} hours={hours} days={days} setTimeStopper={setTimeStopper}/>
         </Route>
         <Route path="/guests">
-          <Guests />
+          <Guests people={getGuests}/>
         </Route>
         <Route path="/booking">
           <Booking />
