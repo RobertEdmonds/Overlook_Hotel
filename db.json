@@ -100,7 +100,7 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 20
+      "likes": 22
     },
     {
       "id": 2,
@@ -149,30 +149,37 @@
     {
       "id": 1,
       "name": "Billy Bob",
-      "start_date": "0307",
-      "end_date": "0314",
+      "start_date": "March 07",
+      "end_date": "March 14",
       "room": "King"
     },
     {
       "id": 2,
       "name": "Tom Brady",
-      "start_date": "0309",
-      "end_date": "0329",
+      "start_date": "March 09",
+      "end_date": "March 29",
       "room": "Suite"
     },
     {
       "id": 3,
       "name": "Serrina Williams",
-      "start_date": "0401",
-      "end_date": "0423",
+      "start_date": "April 01",
+      "end_date": "April 23",
       "room": "Two Queen"
     },
     {
       "id": 4,
       "name": "Rosa Parks",
-      "start_date": "0506",
-      "end_date": "0521",
+      "start_date": "May 06",
+      "end_date": "May 21",
       "room": "King"
+    },
+    {
+      "name": "Hill Billy",
+      "start_date": "August 01",
+      "end_date": "August 14",
+      "room": "King",
+      "id": 5
     }
   ],
   "history": [

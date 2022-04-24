@@ -14,6 +14,7 @@ function App() {
   const [roomImage, setRoomImage] = useState([])
   const [getGhost, setGetGhost] = useState([])
   const [getGuests, setGetGuests] = useState([])
+  const [newGuests, setNewGuests] = useState([])
   const [chooseRoom, setChooseRoom] = useState("All")
   const [seconds, setSeconds] = useState(0)
   const [minutes, setMinutes] = useState(0)
@@ -73,6 +74,10 @@ function App() {
     setChooseRoom(e.target.outerText)
   }
 
+  function handleAddGuest(newGuests){
+    setGetGuests([...getGuests, newGuests])
+  }
+
   const filterRooms = roomImage.filter(item => {
       if(chooseRoom === "All")return true;
 
@@ -107,7 +112,7 @@ function App() {
           <Ghosts ghosts={getGhost} addToGhost={handleUpdatedGhosts} seconds={seconds} minutes={minutes} hours={hours} days={days} setTimeStopper={setTimeStopper}/>
         </Route>
         <Route path="/guests">
-          <Guests people={getGuests}/>
+          <Guests people={getGuests} addToGuests={handleAddGuest}/>
         </Route>
         <Route path="/booking">
           <Booking />

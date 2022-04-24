@@ -24,6 +24,7 @@ function Expectation(){
         backgroundRepeat: "no-repeat",
         backgroundImage: `url("https://topiaryart.co.uk/wp-content/uploads/photo-gallery/CBWYH1sWgAERT8z.jpg")`,
         backgroundSize: "contain",
+        margin: "50px"
     }
     const titleStyle ={
         fontFamily: "Apple Chancery",

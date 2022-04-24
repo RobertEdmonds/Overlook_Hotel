@@ -3,6 +3,8 @@ import React from "react";
 function Footer(){
     const tableStyle = {
         background: "black",
+        bottom: "0",
+        position: "sticky",
         width: "100%"
     }
     const tableManagementStyle = {

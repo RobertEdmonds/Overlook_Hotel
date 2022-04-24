@@ -25,6 +25,7 @@ function History(){
         backgroundRepeat: "no-repeat",
         backgroundImage: `url("https://i.dailymail.co.uk/i/pix/2015/10/31/23/2DFD13E100000578-3298376-_Everyday_felt_like_we_d_been_invited_to_a_very_exclusive_party_-a-1_1446335780138.jpg")`,
         backgroundSize: "contain",
+        margin: "50px"
     }
 
     const listStyle ={

@@ -42,7 +42,7 @@ function Ghosts({ghosts, addToGhost, seconds, minutes, hours, days, setTimeStopp
 
     const displayGhost = ghosts.map(item => {
         return(
-            <div style={{margin: "25px"}} key={item.id}>
+            <div style={{margin: "70px"}} key={item.id}>
                 <img style={imageStyle} src={item.image} alt={item.name}/>
                 <h3 style={hStyle}>{item.name}</h3>
                 <h3 style={hStyle}>{item.likes}</h3>
