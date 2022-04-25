@@ -1,19 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import './App.css';
 
-const linkStyles = {
-  display: "inline-block",
-  float: "right",
-  width: "50px",
-  height: "20px",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "#1b4915",
-  textDecoration: "none",
-  borderRadius: "25%",
-  color: "gold",
-};
 const titleStyle ={
     display: "absolute",
   float: "left",
@@ -28,13 +15,10 @@ const titleStyle ={
   color: "rgb(100, 43, 43)",
 }
 
-const navBarStyle = {
-  height: "100px"
-}
 
 function NavBar() {
   return (
-    <div style={navBarStyle}>
+    <div className="navBar">
     <NavLink
         to="/"
         exact
@@ -45,7 +29,7 @@ function NavBar() {
       <NavLink
         to="/booking"
         exact
-        style={linkStyles}
+        className="link"
         activeStyle={{
           background: "rgb(100, 43, 43)",
         }}
@@ -55,7 +39,7 @@ function NavBar() {
       <NavLink
         to="/guests"
         exact
-        style={linkStyles}
+        className="link"
         activeStyle={{
           background: "rgb(100, 43, 43)",
         }}
@@ -65,7 +49,7 @@ function NavBar() {
       <NavLink
         to="/ghosts"
         exact
-        style={linkStyles}
+        className="link"
         activeStyle={{
           background: "rgb(100, 43, 43)",
         }}
@@ -75,7 +59,7 @@ function NavBar() {
       <NavLink
         to="/rooms"
         exact
-        style={linkStyles}
+        className="link"
         activeStyle={{
           background: "rgb(100, 43, 43)",
         }}
@@ -85,7 +69,7 @@ function NavBar() {
       <NavLink
         to="/images"
         exact
-        style={linkStyles}
+        className="link"
         activeStyle={{
           background: "rgb(100, 43, 43)",
         }}
@@ -95,7 +79,7 @@ function NavBar() {
       <NavLink
         to="/"
         exact
-        style={linkStyles}
+        className="link"
         activeStyle={{
           background: "rgb(100, 43, 43)",
         }}

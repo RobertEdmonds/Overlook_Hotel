@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: #515253;
+}
+.table{
+  background: black;
+  bottom: 0;
+  position: sticky;
+  width: 100%
+}
+.tableManagement{
+  color: white;
+  float: right
+}
+.tableContact{
+  color: white;
+  float: center
+}
+.tableLocation{
+  color: white;
+  float: left
+}
+.link{
+  display: inline-block;
+  float: right;
+  width: 50px;
+  height: 20px;
+  padding: 12px;
+  margin: 0 6px 6px;
+  background: #1b4915;
+  text-decoration: none;
+  border-radius: 25%;
+  color: gold;
+}
+.navBar{
+  height: 100px
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}*/

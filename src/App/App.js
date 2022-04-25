@@ -1,20 +1,19 @@
 import React,{useEffect, useState} from "react";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
-import Home from "./Home";
-import Images from "./Images";
-import Rooms from "./Rooms";
-import Ghosts from "./Ghosts";
-import Guests from "./Guests";
-import Booking from "./Booking";
+import Home from "../Home/Home";
+import Images from "../Images/Images";
+import Rooms from "../Rooms/Rooms";
+import Ghosts from "../Ghost/Ghosts";
+import Guests from "../Guests/Guests";
+import Booking from "../Guests/Booking";
 import Footer from "./Footer.js"
 import './App.css';
 
 function App() {
   const [roomImage, setRoomImage] = useState([])
-  const [getGhost, setGetGhost] = useState([])
-  const [getGuests, setGetGuests] = useState([])
-  const [newGuests, setNewGuests] = useState([])
+  const [ghost, setGhost] = useState([])
+  const [guests, setGuests] = useState([])
   const [chooseRoom, setChooseRoom] = useState("All")
   const [seconds, setSeconds] = useState(0)
   const [minutes, setMinutes] = useState(0)
@@ -55,7 +54,7 @@ function App() {
   useEffect(()=> {
     fetch("http://localhost:3000/ghost")
     .then(resp => resp.json())
-    .then(item => setGetGhost(item))
+    .then(item => setGhost(item))
   }, [])
 
   useEffect(()=> {
@@ -67,7 +66,7 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:3000/guest")
     .then(resp => resp.json())
-    .then(people => setGetGuests(people))
+    .then(people => setGuests(people))
   }, [])
 
   function handleClickFilter(e){
@@ -75,7 +74,12 @@ function App() {
   }
 
   function handleAddGuest(newGuests){
-    setGetGuests([...getGuests, newGuests])
+    setGuests([...guests, newGuests])
+  }
+
+  function handleDeleteGuest(item){
+    const updatedItem = guests.filter(guest => guest.id !== item.id)
+    setGuests(updatedItem)
   }
 
   const filterRooms = roomImage.filter(item => {
@@ -85,14 +89,14 @@ function App() {
   })
 
   function handleUpdatedGhosts(item){
-      const updatedItem = getGhost.map(ghosts =>{
+      const updatedItem = ghost.map(ghosts =>{
         if(ghosts.id === item.id){
           return item
         }else{
           return ghosts
         }
       })
-      setGetGhost(updatedItem)
+      setGhost(updatedItem)
   }
 
   return (
@@ -109,30 +113,16 @@ function App() {
           <Rooms room={filterRooms} handleClickFilter={handleClickFilter}/>
         </Route>
         <Route path="/ghosts">
-          <Ghosts ghosts={getGhost} addToGhost={handleUpdatedGhosts} seconds={seconds} minutes={minutes} hours={hours} days={days} setTimeStopper={setTimeStopper}/>
+          <Ghosts ghosts={ghost} addToGhost={handleUpdatedGhosts} seconds={seconds} minutes={minutes} hours={hours} days={days} setTimeStopper={setTimeStopper}/>
         </Route>
         <Route path="/guests">
-          <Guests people={getGuests} addToGuests={handleAddGuest}/>
+          <Guests people={guests} onGuestDelete={handleDeleteGuest}/>
         </Route>
         <Route path="/booking">
-          <Booking />
+          <Booking addToGuests={handleAddGuest}/>
         </Route>
       </Switch>
       <Footer />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }

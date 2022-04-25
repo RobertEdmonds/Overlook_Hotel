@@ -1,6 +1,6 @@
 import React from "react";
 
-function Guests({people}){
+function Guests({people, onGuestDelete}){
 
     const listStyle ={
         margin:  "1px",
@@ -8,6 +8,7 @@ function Guests({people}){
         gridTemplateColumns: "1fr 1fr 160px 100px",
         columnGap: "8rem",
         alignItems: "center",
+        marginBottom: "10px",
         borderRadius: "4px"
       }
 
@@ -20,6 +21,14 @@ function Guests({people}){
         fontWeight: "bold",
         borderRadius: "4px"
     }
+    function handleDelete(item){
+        fetch(`http://localhost:3000/guest/${item.id}`,{
+            method: "DELETE",
+        })
+        .then(resp => resp.json())
+        .then(() => onGuestDelete(item))
+    }
+
     
     const displayGuests = people.map(item => {
         return(
@@ -27,7 +36,7 @@ function Guests({people}){
                 <span>{item.name}</span>
                 <span>{item.start_date} -- {item.end_date}</span>
                 <span>{item.room}</span>
-                <button>Check Out</button>
+                <button onClick={() => handleDelete(item)}>Check Out</button>
             </li>)   
     })
     
