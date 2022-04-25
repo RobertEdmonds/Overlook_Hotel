@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #515253;
 }
+/* Footer Component */
 .table{
   background: black;
   bottom: 0;
@@ -20,6 +21,7 @@
   color: white;
   float: left
 }
+/* NavBar Component */
 .link{
   display: inline-block;
   float: right;
@@ -35,6 +37,117 @@
 .navBar{
   height: 100px
 }
+/* Home Component */
+.homeImage{
+  background-position: 0 0;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-image: url('https://static01.nyt.com/images/2015/08/28/us/28labyrinthweb1/28labyrinthweb1-superJumbo.jpg');
+  background-size: cover;
+  padding-top: 100px;
+  height: 300px;
+  width: 100%;
+  filter: blur(3px)
+}
+.homeImageText{
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: "Apple Chancery";
+}
+.divHistory{
+  max-width: 100%;
+  max-height: 400px;
+  height: 300px;
+  background-position: 0px 40px;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-image: url("https://i.dailymail.co.uk/i/pix/2015/10/31/23/2DFD13E100000578-3298376-_Everyday_felt_like_we_d_been_invited_to_a_very_exclusive_party_-a-1_1446335780138.jpg");
+  background-size: contain;
+  margin: 50px
+}
+
+.listHistory{
+  width: 400px;
+  float: right;
+}
+
+.titleHistory{
+  font-family: "Apple Chancery"
+}
+.divExpectation{
+    max-width: 100%;
+    max-height: 400px;
+    height: 300px;
+    background-position: 100% 40px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-image: url("https://topiaryart.co.uk/wp-content/uploads/photo-gallery/CBWYH1sWgAERT8z.jpg");
+    background-size: contain;
+    margin: 50px
+}
+.titleExpectation{
+    font-family: "Apple Chancery"
+}
+/* Image Component */
+.leftImageDiv{
+  max-width: 100%;
+  max-height: 100%;
+  padding: 25px;
+  background: #424c50;
+  float: left
+}
+.image{
+  width: 400px;
+  height: 300px
+}
+.rightImageDiv{
+  max-width: 100%;
+  max-height: 100%;
+  padding: 25px;
+  background: #424c50;
+  float: right
+}
+/* Rooms Component */
+.divRooms{
+  border: 2px solid rgb(100, 43, 43);
+  padding: 25px
+}
+.imageRooms{
+  width: 450px;
+  height: 350px
+}
+.buttonRooms{
+  width: 50px;
+  height: 40px;
+  background: #1b4915;
+  border-radius: 25%;
+  color: gold;
+  margin: 5px
+}
+/* Ghosts Component */
+.buttonGhosts{
+  width: 100px;
+  height: 40px;
+  background: #1b4915;
+  border-radius: 50%;
+  color: gold;
+  font-weight: bold;
+  margin: "5px"
+}
+
+.imageGhosts{
+  width: 250px;
+  height: 400px
+}
+
+.h_Ghosts{
+  font-family: "Chalkduster";
+  color: rgb(100, 43, 43)
+}
+/* Guests Component */
 
 
 /* @media (prefers-reduced-motion: no-preference) {

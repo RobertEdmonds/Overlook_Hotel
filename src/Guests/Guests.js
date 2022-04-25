@@ -41,6 +41,7 @@ function Guests({people, onGuestDelete}){
     })
     
     return(
+        <>
         <ul>
             <li style={listTitleStyle}>
                     <span>Guests Name</span>
@@ -50,6 +51,8 @@ function Guests({people, onGuestDelete}){
                 </li>
             {displayGuests}
         </ul>
+        <div style={{height: "100vh"}}></div>
+        </>
     )
 }
 

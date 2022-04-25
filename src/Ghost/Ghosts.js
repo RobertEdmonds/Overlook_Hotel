@@ -20,41 +20,21 @@ function Ghosts({ghosts, addToGhost, seconds, minutes, hours, days, setTimeStopp
         })
     }
 
-    const buttonDisplay = {
-        width: "100px",
-        height: "40px",
-        background: "#1b4915",
-        borderRadius: "50%",
-        color: "gold",
-        fontWeight: "bold",
-        margin: "5px"
-    }
-
-    const imageStyle = {
-        width: "250px",
-        height: "400px"
-    }
-
-    const hStyle = {
-        fontFamily: "Chalkduster",
-        color: "rgb(100, 43, 43)"
-    }
-
     const displayGhost = ghosts.map(item => {
         return(
             <div style={{margin: "70px"}} key={item.id}>
-                <img style={imageStyle} src={item.image} alt={item.name}/>
-                <h3 style={hStyle}>{item.name}</h3>
-                <h3 style={hStyle}>{item.likes}</h3>
-                <button style={buttonDisplay} onClick={() => handleSightingsClick(item)}>Sighting</button>
+                <img className="imageGhosts" src={item.image} alt={item.name}/>
+                <h3 className="h_Ghosts">{item.name}</h3>
+                <h3 className="h_Ghosts">{item.likes}</h3>
+                <button className="buttonGhosts" onClick={() => handleSightingsClick(item)}>Sighting</button>
             </div>
         )
     })
     return(
         <>
-            <h1 style={hStyle}>Time Since Last Ghost Spotting</h1> 
-            <h1 style={hStyle}>{hours} : {minutes} : {seconds}</h1>
-            <h1 style={hStyle}>Days {days}</h1>
+            <h1 className="h_Ghosts">Time Since Last Ghost Spotting</h1> 
+            <h1 className="h_Ghosts">{hours} : {minutes} : {seconds}</h1>
+            <h1 className="h_Ghosts">Days {days}</h1>
             {displayGhost}
         </>
     )

@@ -14,24 +14,10 @@ function Expectation(){
             <li key={item.id}>{item.event}</li>
         )
     })
-    const divExpectationStyle ={
-        maxWidth: "100%",
-        maxHeight: "400px",
-        height: "300px",
-        // textAlign: "center",
-        backgroundPosition: "100% 40px",
-        backgroundAttachment: "scroll",
-        backgroundRepeat: "no-repeat",
-        backgroundImage: `url("https://topiaryart.co.uk/wp-content/uploads/photo-gallery/CBWYH1sWgAERT8z.jpg")`,
-        backgroundSize: "contain",
-        margin: "50px"
-    }
-    const titleStyle ={
-        fontFamily: "Apple Chancery",
-    }
+   
     return(
-        <div style={divExpectationStyle}>
-            <h3 style={titleStyle}>What To Expect For Your Stay</h3>
+        <div className="divExpectation">
+            <h3 className="titleExpectation">What To Expect For Your Stay</h3>
             <ol style={{width: "400px"}}>
                 {displayExpectations}
             </ol>
