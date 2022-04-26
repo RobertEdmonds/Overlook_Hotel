@@ -7,19 +7,10 @@ function Booking({addToGuests}){
     const [guestMonth, setGuestMonth] = useState("January")
     const [startDay, setStartDay] = useState("01")
     const [endDay, setEndDay] = useState("01")
+    const [errorMessage, setErrorMessage] = useState("none")
 
     const startDate = (guestMonth + " " + startDay)
     const endDate = (guestMonth + " " + endDay)
-
-    const listStyle ={
-        margin:  "1px",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr 160px 100px",
-        columnGap: "8rem",
-        alignItems: "center",
-        height: "100%",
-        borderRadius: "4px"
-      }
 
     function handleSubmit(e){
         e.preventDefault()
@@ -29,20 +20,33 @@ function Booking({addToGuests}){
             end_date: endDate,
             room: guestRoom
         }
-        fetch("http://localhost:3000/guest",{
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(dataForm)
-        })
-        .then(resp => resp.json())
-        .then(item => addToGuests(item))
+        if(parseInt(startDay) >= parseInt(endDay)){
+                setErrorMessage("block")
+        }else{
+            setErrorMessage('none')
+            fetch("http://localhost:3000/guest",{
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(dataForm)
+            })
+            .then(resp => resp.json())
+            .then(item => addToGuests(item))
+            setGuestName("")
+            setGuestRoom("Two Queen")
+            setGuestMonth("January")
+            setStartDay("01")
+            setEndDay("01")
+        }
     }
 
     return(
         <>
-        <form onSubmit={handleSubmit} style={listStyle}>
+        <div className="errorBooking">
+            <h1 style={{display: errorMessage}}>Not Valid Date</h1>
+        </div>
+        <form onSubmit={handleSubmit} className="listBooking">
             <label>
                 Name:
                 <input

@@ -148,7 +148,43 @@
   color: rgb(100, 43, 43)
 }
 /* Guests Component */
+.listGuests{
+  margin:  1px;
+  padding-right: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 160px 100px;
+  column-gap: 8rem;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 4px
+}
 
+.listGuestsTitle{
+  margin:  1px;
+  padding-right: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 160px 100px;
+  column-gap: 8rem;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 4px
+}
+.listBooking{
+  margin:  5px;
+  padding-right: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 160px 100px;
+  column-gap: 8rem;
+  align-items: center;
+  border-radius: 4px
+}
+.errorBooking{
+  color: red
+}
+.divCost{
+  color: greenyellow;
+  height: 100vh;
+}
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -118,7 +118,7 @@
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 7
+      "likes": 8
     },
     {
       "id": 5,
@@ -187,6 +187,20 @@
       "end_date": "June 21",
       "room": "Suite",
       "id": 7
+    },
+    {
+      "name": "Barbra Sihombing",
+      "start_date": "June 15",
+      "end_date": "June 18",
+      "room": "King",
+      "id": 8
+    },
+    {
+      "name": "Holly Sihombing",
+      "start_date": "April 21",
+      "end_date": "April 28",
+      "room": "Suite",
+      "id": 9
     }
   ],
   "history": [
