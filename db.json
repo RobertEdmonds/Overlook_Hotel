@@ -112,7 +112,7 @@
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 5
+      "likes": 8
     },
     {
       "id": 4,
@@ -175,32 +175,18 @@
       "room": "King"
     },
     {
-      "name": "Bonnie Parker",
-      "start_date": "July 07",
-      "end_date": "July 11",
-      "room": "Two Queen",
-      "id": 6
-    },
-    {
-      "name": "Hill Billy",
-      "start_date": "June 11",
-      "end_date": "June 21",
-      "room": "Suite",
-      "id": 7
-    },
-    {
-      "name": "Barbra Sihombing",
-      "start_date": "June 15",
-      "end_date": "June 18",
-      "room": "King",
-      "id": 8
-    },
-    {
       "name": "Holly Sihombing",
       "start_date": "April 21",
       "end_date": "April 28",
       "room": "Suite",
       "id": 9
+    },
+    {
+      "name": "Nancy Hart",
+      "start_date": "June 06",
+      "end_date": "June 10",
+      "room": "Suite",
+      "id": 10
     }
   ],
   "history": [

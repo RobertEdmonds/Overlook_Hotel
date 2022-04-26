@@ -18,7 +18,7 @@ function Expectation(){
     return(
         <div className="divExpectation">
             <h3 className="titleExpectation">What To Expect For Your Stay</h3>
-            <ol style={{width: "400px"}}>
+            <ol style={{width: "400px", textAlign: "left"}}>
                 {displayExpectations}
             </ol>
         </div>

@@ -5,7 +5,7 @@ function Cost({startDay, endDay, room}){
     if(((parseInt(endDay)- parseInt(startDay))*1) <= 0){
         return(
             <div style={{height: "100vh"}}>
-                <h1>Please Enter Valid Date's</h1>
+                <h1>Please Enter Valid Dates</h1>
             </div>
         )
     }else if(room === "Two Queen"){
