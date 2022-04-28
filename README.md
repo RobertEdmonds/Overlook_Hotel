@@ -16,4 +16,4 @@ I developed this Overlook Hotel webpage, pulling information from a application 
 
 ## Links
 * [Youtube Webpage Walk Through]()
-* [Blog Link]()
+* [Blog Link](https://medium.com/@bobby.edmonds89/the-elusive-counting-up-clock-with-react-3e16a39f2ca4)

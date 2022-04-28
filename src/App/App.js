@@ -30,6 +30,8 @@ function App() {
               setMinutes(0)
               setSeconds(0)
               setTimeStopper(false)
+          }else if(seconds < 59){
+            setSeconds(seconds + 1)
           }else if(seconds === 59 && minutes < 59){
               setMinutes(minutes + 1)
               setSeconds(0)
@@ -41,10 +43,7 @@ function App() {
               setDays(days + 1)
               setHours(0)
               setMinutes(0)
-              setSeconds(0)
-          }else if(seconds < 59){
-              setSeconds(seconds + 1)
-          }
+              setSeconds(0)}
         }, 1000)
         return ()=> {
             clearInterval(myInterval);
