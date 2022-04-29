@@ -67,14 +67,14 @@ function NavBar() {
         Rooms
       </NavLink>
       <NavLink
-        to="/images"
+        to="/gallery"
         exact
         className="link"
         activeStyle={{
           background: "rgb(100, 43, 43)",
         }}
       >
-        Images
+        Gallery 
       </NavLink>
       <NavLink
         to="/"

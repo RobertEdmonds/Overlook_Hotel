@@ -15,5 +15,5 @@ I developed this Overlook Hotel webpage, pulling information from a application 
 * In the bookings tab, when changing the dates, it will display the starting cost for the room. If the user tries to submit with check in equal or later than check in, it will display a message until check out is later than check in.
 
 ## Links
-* [Youtube Webpage Walk Through]()
+* [Youtube Webpage Walk Through](https://youtu.be/gZxSQ956h6A "Overlook YouTube Video")
 * [Blog Link](https://medium.com/@bobby.edmonds89/the-elusive-counting-up-clock-with-react-3e16a39f2ca4)

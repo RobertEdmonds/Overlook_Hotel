@@ -14,7 +14,7 @@ function Footer(){
             <tbody>    
                 <tr>
                     <td className="tableLocation">555 Overlook Pass</td>
-                    <td className="tableContact">(303)466-4355</td>
+                    <td className="tableContact">(303)466-5455</td>
                     <td className="tableManagement">Stuart Ullman</td>
                 </tr>
                 <tr>

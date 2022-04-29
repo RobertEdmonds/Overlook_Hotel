@@ -53,7 +53,7 @@
   position: absolute;
   z-index: 2;
   transform: translate(-50%, -50%);
-  top: 45%;
+  top: 50%;
   left: 50%;
   font-family: "Apple Chancery";
   font-weight: bold;
@@ -143,11 +143,12 @@
 
 .imageGhosts{
   width: 250px;
-  height: 400px
+  height: 300px
 }
 
 .h_Ghosts{
   font-family: "Chalkduster";
+  font-weight: bold;
   color: rgb(100, 43, 43)
 }
 /* Guests Component */

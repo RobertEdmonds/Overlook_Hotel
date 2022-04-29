@@ -105,7 +105,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/images">
+        <Route path="/gallery">
           <Images room={roomImage} />
         </Route>
         <Route path="/rooms">
