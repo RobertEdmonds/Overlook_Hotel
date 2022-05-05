@@ -194,6 +194,13 @@
       "end_date": "January 09",
       "room": "King",
       "id": 8
+    },
+    {
+      "name": "Nancy Hart",
+      "start_date": "November 20",
+      "end_date": "November 27",
+      "room": "Two Queen",
+      "id": 9
     }
   ],
   "history": [

@@ -30,6 +30,7 @@ function Ghosts({ghosts, addToGhost, seconds, minutes, hours, days, setTimeStopp
             </div>
         )
     })
+    
     return(
         <>
             <h1 className="h_Ghosts">Time Since Last Ghost Spotting</h1> 
